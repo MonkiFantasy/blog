@@ -42,3 +42,15 @@ git config --global --unset https.proxy
 ipconfig/flushdns
 ```
 
+## github添加远程仓库
+
+```bash
+git remote add 仓库名 仓库地址
+```
+
+## github修改远程仓库地址
+
+```bash
+git remote set-url 仓库名 新仓库地址
+```
+
