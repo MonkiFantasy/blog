@@ -175,5 +175,30 @@ listen_port=8089
 /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian
 ```
 
+## 环境配置文件
 
+### termux配置
+
+~/.bashrc
+
+```bash
+alias debian='proot-distro login debian'
+alias debianHome='cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian'
+```
+
+### debian配置
+
+~/.bashrc
+
+```bash
+alias vnc='vncserver-stop;vncserver-start'
+```
+
+/etc/profile
+
+```bash
+export JAVA_HOME=~/Enviroments/jdk1.8.0_381
+export MAVEN_HOME=~/Enviroments/apache-maven-3.9.4
+export PATH=$PATH:$MAVEN_HOME/bin:${JAVA_HOME}/bin
+```
 
